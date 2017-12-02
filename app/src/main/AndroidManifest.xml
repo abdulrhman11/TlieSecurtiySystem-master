@@ -44,7 +44,7 @@
         </receiver>
 
         <activity
-            android:name=".Contact_Us"
+            android:name=".support"
             android:label="@string/title_activity_contact__us"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

@@ -14,12 +14,12 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class Contact_Us extends AppCompatActivity {
+public class support extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact__us);
+        setContentView(R.layout.support);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -52,7 +52,7 @@ public class Contact_Us extends AppCompatActivity {
                     try {
                         startActivity(Intent.createChooser(i, "Send Email"));
                     } catch (android.content.ActivityNotFoundException ex) {
-                        Toast.makeText(Contact_Us.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(support.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -65,7 +65,7 @@ public class Contact_Us extends AppCompatActivity {
 
                 Intent call = new Intent(Intent.ACTION_CALL);
                 call.setData(Uri.parse("tel:0564926992"));
-                if (ActivityCompat.checkSelfPermission(Contact_Us.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                if (ActivityCompat.checkSelfPermission(support.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
                     // here to request the missing permissions, and then overriding
