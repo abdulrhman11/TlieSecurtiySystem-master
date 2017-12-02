@@ -13,12 +13,14 @@
             android:id="@+id/imageButton5"
             android:layout_width="match_parent"
             android:layout_height="101dp"
-            app:srcCompat="@drawable/alarm" />
+            app:srcCompat="@drawable/alarm"
+            android:background="@color/colorAccent"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Alarm"
-        android:gravity="center"/>
+        android:gravity="center"
+        />
 
 
 
@@ -28,7 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/step" />
+        app:srcCompat="@drawable/step"
+        android:background="@color/colorAccent"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/cctv" />
+        app:srcCompat="@drawable/cctv"
+        android:background="@color/colorAccent"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -57,12 +61,13 @@
         android:layout_width="match_parent"
         android:layout_height="101dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/email" />
+        app:srcCompat="@drawable/cantactus"
+        android:background="@color/colorAccent"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Email"
+        android:text="Contact Us"
         android:gravity="center"/>
 
 

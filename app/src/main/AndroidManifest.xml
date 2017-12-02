@@ -4,8 +4,9 @@
 
     <!-- suppress DeprecatedClassUsageInspection -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -26,19 +27,26 @@
         <activity android:name=".UserAreaActivity" />
         <!-- suppress AndroidDomInspection -->
         <activity android:name=".arteList" />
-        <activity android:name=".Alrte_Activity"></activity>
+        <activity android:name=".Alrte_Activity" />
 
         <service android:name=".notification.CheckDataFromServer" />
 
         <activity android:name=".CountActivity" />
 
         <!-- Declaring broadcast receiver for BOOT_COMPLETED event. -->
-        <receiver android:name=".notification.BootReceiver" android:enabled="true" android:exported="false">
+        <receiver
+            android:name=".notification.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name=".Contact_Us"
+            android:label="@string/title_activity_contact__us"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

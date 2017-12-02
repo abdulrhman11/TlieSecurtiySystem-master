@@ -22,22 +22,8 @@ public class UserAreaActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                    Intent intent =null, chooser=null;
-
-                    if(v.getId()==R.id.imageButton2){
-
-                        Intent i = new Intent(Intent.ACTION_SEND);
-                        i.setType("message/rfc822");
-                        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"qu_u@hotmail.com"});
-                        i.putExtra(Intent.EXTRA_SUBJECT, "tile securtiy system");
-                        i.putExtra(Intent.EXTRA_TEXT   , "tile securtiy system");
-                        try {
-                            startActivity(Intent.createChooser(i, "Send Email"));
-                        } catch (android.content.ActivityNotFoundException ex) {
-                            Toast.makeText(UserAreaActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
+                Intent intent = new Intent(UserAreaActivity.this,Contact_Us.class);
+                UserAreaActivity.this.startActivity(intent);
 
                 }
 
